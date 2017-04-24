@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.netforceinfotech.tagalong.home.findride.applyfilter.CarComfortFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_car_comfort"
+            android:textColor="@color/colorTextSecondary" />
+
+        <RadioGroup
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/radio_grp_carcomfort"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonAllType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_type"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBasic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basic"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/normal"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonComfortable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comfortable"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLuxury"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/luxury"
+                android:textColor="@color/colorTextSecondary" />
+        </RadioGroup>
+    </LinearLayout>
+
+</FrameLayout>

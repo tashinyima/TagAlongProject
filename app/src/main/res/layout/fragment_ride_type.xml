@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.netforceinfotech.tagalong.home.findride.applyfilter.RideTypeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_ride_type"
+            android:textColor="@color/colorTextSecondary" />
+
+        <RadioGroup
+            android:layout_marginTop="16dp"
+            android:id="@+id/radio_grp_ridetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonAllRides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allride"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLadyOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ladyonly"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonShoppingRide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoppingride"
+                android:textColor="@color/colorTextSecondary" />
+
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    tools:context="com.netforceinfotech.tagalong.home.findride.applyfilter.RatingFragment">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selectratingframe" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="10"
+            android:layout_gravity="center">
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+
+
+                android:gravity="center"
+                hedgehog:starCount="5"
+                hedgehog:starEmpty="@drawable/ic_star_outline1"
+                hedgehog:starFill="@drawable/ic_star_full1"
+                hedgehog:starHalf="@drawable/ic_half_star"
+                hedgehog:starImageHeight="25dp"
+                hedgehog:starImagePadding="8dp"
+                hedgehog:starImageWidth="25dp" />
+            <TextView
+                android:id="@+id/ratingtext"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+               android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+                android:text="@string/ratingtext" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

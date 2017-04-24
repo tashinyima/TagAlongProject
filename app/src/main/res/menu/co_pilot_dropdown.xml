@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".myprofile.MyProfileActivity"
+    >
+
+    <item
+        android:id="@+id/dd1"
+        android:title="Lorem Lipsume Smoke Datas 0"
+        />
+
+    <item
+        android:id="@+id/dd2"
+        android:title="Lorem Lipsume Smoke Datas 1"
+
+        />
+    <item
+        android:id="@+id/dd3"
+        android:title="Lorem Lipsume Smoke Datas 2"
+
+        />
+    <item
+        android:id="@+id/dd4"
+        android:title="Lorem Lipsume Smoke Datas 3"
+
+        />
+
+
+</menu>

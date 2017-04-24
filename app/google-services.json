@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "945827322157",
+    "firebase_url": "https://tagalong-8a132.firebaseio.com",
+    "project_id": "tagalong-8a132",
+    "storage_bucket": "tagalong-8a132.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945827322157:android:df315214ed467019",
+        "android_client_info": {
+          "package_name": "com.netforceinfotech.tagalong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945827322157-a90jsncm78kj0pdo1nlkjpjcok914uvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Li8dZXJJMMS1qiayUp_o5cqYKgrkHXg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

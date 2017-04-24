@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.netforceinfotech.tagalong">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission
+        android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".general.TagAlongTypeFont"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.SignUpActivity" />
+        <activity android:name=".login.ForgotPasswordActivity" />
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".driverProfile.DriverProfile" />
+        <activity android:name=".myCars.MyCarActivity" />
+        <activity android:name=".myCars.registercar.RegisterNewCar" />
+        <activity android:name=".home.findride.CantFindRideActivity" />
+        <activity android:name=".home.offerride.RideDetailActivity" />
+        <activity android:name=".home.offerride.CarDetailActivity" />
+        <activity android:name=".myprofile.MyProfileActivity" />
+        <activity android:name=".chat.MyChatActivity" />
+        <activity android:name=".dashboard.MyDashboardActivity" />
+        <activity android:name=".home.findride.paymentmodes.PaymentModeActivity" />
+        <activity android:name=".chat.driverchat.DriverChatActivity" />
+        <activity android:name=".home.findride.ride_available.RidesActivity" />
+        <activity android:name=".home.findride.applyfilter.ApplyFilterActivity" />
+        <activity android:name=".home.findride.ride_available.BookingSeatsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".home.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".myCars.carlist.CarListActivity" />
+        <activity android:name=".home.findride.ride_available.RideAvailDetailActivity" />
+        <activity android:name=".googledistance.GoogleMapActivity"></activity>
+    </application>
+
+</manifest>

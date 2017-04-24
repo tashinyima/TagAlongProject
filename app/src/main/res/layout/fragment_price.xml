@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.netforceinfotech.tagalong.home.findride.applyfilter.PriceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_price_range"
+            android:textColor="@color/colorTextSecondary" />
+
+        <RadioGroup
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/radio_grp_price"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonAllPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_price"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHighPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/highprice"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAveragePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/averageprice"
+                android:textColor="@color/colorTextSecondary" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLowPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lowprice"
+                android:textColor="@color/colorTextSecondary" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+</FrameLayout>

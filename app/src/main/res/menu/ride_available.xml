@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemChat"
+        android:title="@string/chatItem"
+        android:icon="@drawable/chat"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+        android:title="@string/NotiItem"
+        android:id="@+id/itemNotification"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_notification"
+        />
+    <item
+        android:title="@string/filter"
+        android:id="@+id/itemFilter"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_filter"
+        />
+</menu>

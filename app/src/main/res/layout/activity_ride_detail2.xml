@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_ride_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        tools:context="com.netforceinfotech.tagalong.home.findride.ride_available.Ride_detail">
+
+        <LinearLayout
+            android:id="@+id/activity_my_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/grey"
+            tools:context=".home.findride.ride_available.RidesActivity"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/app_bar">
+
+                </include>
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:background="#ECEFF0"
+
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_height="0dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:weightSum="8"
+
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            android:layout_height="0dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imageViewDp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/profile_image" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="6dp"
+                                android:layout_toRightOf="@+id/imageViewDp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ProfileName"
+                                    android:id="@+id/membername"/>
+
+                                <com.hedgehog.ratingbar.RatingBar
+                                    android:id="@+id/ratingbar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="6dp"
+                                    android:gravity="center"
+                                    hedgehog:starCount="5"
+                                    hedgehog:starEmpty="@drawable/ic_star_outline1"
+                                    hedgehog:starFill="@drawable/ic_star_full1"
+                                    hedgehog:starHalf="@drawable/ic_half_star"
+                                    hedgehog:starImageHeight="25dp"
+                                    hedgehog:starImagePadding="8dp"
+                                    hedgehog:starImageWidth="25dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/round_cornor_accent"
+                                android:orientation="horizontal"
+                                android:padding="6dp">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="56.70"
+                                    android:id="@+id/trip_prize"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="/-"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/seat"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="16dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/departure_from"
+
+                                    android:textColor="@color/colorAccent" />
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:layout_marginTop="10dp"
+                                    android:id="@+id/from_tv"
+                                    android:text="Delhi, India" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Destination"
+                                    android:textColor="@color/colorAccent" />
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/to_tv"
+                                    android:singleLine="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Mumbai, India" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                      >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_calender" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:id="@+id/date_tv"
+                                    android:text="dd/mm/yyyy" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="16dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_time" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:id="@+id/tv_time"
+                                    android:text="4:50 PM" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+
+                            android:layout_weight="3"
+                            android:layout_height="0dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:weightSum="3"
+                                android:layout_weight="2"
+
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="2"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_height="0dp">
+                                                    <TextView
+
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_weight="1"
+                                                        android:gravity="center_vertical"
+                                                        android:text="@string/schedule"
+                                                        android:textColor="@color/cardview_dark_background"
+                                                      />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                       android:layout_gravity="center_vertical"
+
+
+                                        android:text="Right on time"
+                                        android:id="@+id/tv_schdule" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="2"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+
+                                    android:layout_weight="1"
+                                    android:layout_height="0dp">
+                                    <TextView
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/detour"
+                                        android:textColor="@color/cardview_dark_background"
+                                        />
+
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+android:singleLine="true"
+android:id="@+id/detour_tv"
+
+                                        android:text="None" />
+
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="2"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:layout_height="0dp">
+
+                                    <TextView
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/lauggagesize"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:id="@+id/textView13" />
+
+                                    <TextView
+                                        android:layout_weight="0.5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_vertical"
+
+                                        android:id="@+id/luggage_size"
+                                        android:text="Small" />
+
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:weightSum="5"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="3"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_seat" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:id="@+id/totalSeattextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_marginRight="5dp"
+                                        android:text="4" />
+
+                                    <TextView
+                                        android:id="@+id/seatTextView"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/totalSeattextView"
+                                        android:text="@string/seat"/>
+            </RelativeLayout>
+                                    <TextView
+                                        android:id="@+id/availTextView"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_toRightOf="@id/totalSeattextView"
+                                        android:text="@string/avail"/>
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="4"
+                        android:padding="6dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical"
+                            android:layout_height="0dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:text="@string/car_details"
+                                android:layout_height="wrap_content" >
+
+
+
+                            </TextView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="2"
+                                android:weightSum="2"
+                                android:orientation="horizontal"
+                                android:layout_height="0dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:weightSum="2"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:layout_weight="1"
+                                            android:weightSum="2"
+                                            android:layout_height="0dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="@string/brand"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Audi"
+                                                android:id="@+id/car_brand"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+
+
+
+
+
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:layout_weight="1"
+                                            android:layout_height="0dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="@string/type"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="None"
+                                                android:id="@+id/car_type"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:weightSum="2"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:layout_weight="1"
+                                            android:weightSum="2"
+                                            android:layout_height="0dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="@string/comfort"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="Luxury"
+                                                android:id="@+id/tv_luxury"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+
+
+
+
+
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:orientation="horizontal"
+                                            android:layout_weight="1"
+                                            android:layout_height="0dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="@string/plateno"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="js463"
+                                                android:id="@+id/tv_car_plate_no"
+                                                android:layout_height="wrap_content" >
+
+
+                                            </TextView>
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="3"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1.5"
+                                android:orientation="vertical"
+                                android:layout_height="0dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:textStyle="bold"
+                                    android:gravity="center_vertical"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="@string/preference"
+                                    android:layout_height="0dp" >
+
+                                </TextView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="2"
+                                    android:weightSum="4"
+                                    android:orientation="horizontal"
+                                    android:layout_height="0dp">
+
+                                   <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_weight="1"
+                                       android:weightSum="3"
+                                       android:orientation="vertical"
+                                       android:layout_height="match_parent">
+                                       <ImageView
+                                           android:layout_width="match_parent"
+                                           android:layout_weight="2"
+                                           android:src="@drawable/ic_nosmoke"
+                                           android:layout_height="0dp" />
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_weight="1"
+                                           android:layout_height="0dp"
+                                           android:text="No smoking"/>
+
+
+
+                                   </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:weightSum="3"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="2"
+                                            android:src="@drawable/ic_pet"
+                                            android:layout_height="0dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_height="0dp"
+                                            android:text="No Pets"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:weightSum="3"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="2"
+                                            android:src="@drawable/ic_chat"
+                                            android:layout_height="0dp" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_weight="1"
+                                            android:layout_height="0dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:text="I am quiet type"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:weightSum="3"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="2"
+                                            android:src="@drawable/ic_music"
+                                            android:layout_height="0dp" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_weight="1"
+                                            android:layout_height="0dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:text="Slience is golden"/>
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+
+                                android:layout_margin="10dp"
+                                    android:background="@drawable/round_cornor_accent"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="6dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:id="@+id/book_this_ride"
+                                        android:layout_gravity="center_horizontal|center_vertical"
+                                        android:text="@string/bookthisride"
+                                        android:textColor="@color/white" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_apply_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.netforceinfotech.tagalong.home.findride.applyfilter.ApplyFilterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_bar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/radioButtonTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/radioButtonPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/radioButtonPicture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/radioButtonRideType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/radioButtonCarcomfort"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/radioButtonRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_filter_Time"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorTextPrimary"
+                            android:id="@+id/textViewTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/time" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_filter_Price"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorTextPrimary"
+                            android:id="@+id/textViewPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/price" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_filter_Picture"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorTextPrimary"
+                            android:id="@+id/textViewPicture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/picture" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_filter_RideType"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorTextPrimary"
+                            android:id="@+id/textViewRideType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/ride_type" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_filter_CarComfort"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorTextPrimary"
+                            android:id="@+id/textViewCarComfort"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/car_comfort" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_filter_Rating"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorTextPrimary"
+                            android:id="@+id/textViewRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/rating" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:id="@+id/buttonApply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_cornor_accent"
+                            android:text="@string/apply"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fromLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/lightgrey">
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

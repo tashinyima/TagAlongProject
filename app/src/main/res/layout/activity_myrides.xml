@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_myrides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.netforceinfotech.tagalong.myrides.Myrides">
+
+        <FrameLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        android:id="@+id/toolbar"
+                        layout="@layout/app_bar" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.netforceinfotech.ibet1.scratchview.ScratchFragment">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                    android:id="@+id/drawer_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tab_layout_my_rides"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:elevation="6dp"
+                            android:minHeight="?attr/actionBarSize"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                            app:tabIndicatorColor="@color/white"
+
+                            app:tabMinWidth="400dp"
+                            app:tabMaxWidth="400dp"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/white"
+                            app:tabTextColor="@color/white"
+
+                            />
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@id/tab_layout" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+
+
